@@ -12,8 +12,8 @@ import keyring
 class DebugLogin:
     """get error"""
     url = "https://scicat07.esss.lu.se:32223/"
-    #url = "https://scitest.esss.lu.se/"
-    # url = "https://scicat.esss.se/"
+    url = "https://scitest.esss.lu.se/"
+    #url = "https://scicat.esss.se/"
     username = ""
     username = ""
     password = ""
@@ -34,6 +34,7 @@ class DebugLogin:
 
     def debug(self):
         """debug"""
+        print (f'testing {self.url}')
         login_url = self.url + "auth/msad"
         logout_url = self.url + "api/v3/Users/logout?access_token="
         log_data = {
